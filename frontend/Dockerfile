@@ -21,7 +21,7 @@ COPY . .
 RUN yarn build
 
 
-FROM nginx:1.18-alpine
+FROM nginx:mainline-alpine
 
 COPY conf/default.conf /etc/nginx/conf.d/default.conf
 
